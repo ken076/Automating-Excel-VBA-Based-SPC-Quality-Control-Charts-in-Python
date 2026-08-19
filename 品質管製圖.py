@@ -22,16 +22,16 @@ x_bar = np.mean(data, axis=1)          # 各子組平均值 (X-bar)
 sample_std = np.std(data, axis=1, ddof=1) # 各子組標準差 (對應 VBA 的 StDev_S)
 sample_range = np.ptp(data, axis=1)    # 各子組全距 (Max - Min)
 
-# 3. 計算中心線 (CL) 與參數 (對應 VBA 中的公式 logic)
+# 3. 計算中心線 (CL) 與參數 
 grand_mean = np.mean(x_bar)            # X-bar 的中心線 CL
 p5_std = np.mean(sample_std)           # 平均標準差 (即圖片 VBA 中的 P5 變數)
 cl_r = np.mean(sample_range)           # R chart 的中心線 CL
 
-# --- X-bar Chart 控制界限 (引用圖片中的 1.023 係數) ---
+# --- X-bar Chart 控制界限  ---
 ucl_x = grand_mean + 1.023 * p5_std
 lcl_x = grand_mean - 1.023 * p5_std
 
-# --- R Chart 控制界限 (引用圖片中的 2.574 係數) ---
+# --- R Chart 控制界限  ---
 ucl_r = 2.574 * p5_std
 lcl_r = 0.0 * p5_std
 
