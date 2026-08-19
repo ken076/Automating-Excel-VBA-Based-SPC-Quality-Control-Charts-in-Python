@@ -5,9 +5,6 @@
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen.svg)
-
-一個基於 Python 開發的**自動化統計製程管制（Statistical Process Control, SPC）系統**。本系統支援計量型與計數型管制圖的自動化繪製，並具備即時的**管制邊界計算與自動異常點檢測（Anomaly Detection）**功能，協助品質管理人員快速識別製程中的非隨機變異。
-
 ---
 
 ## 🌟 主要功能特色 (Key Features)
